@@ -10,8 +10,27 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
-        <div class="navbar-item has-dropdown is-hoverable">
+        {{#each site.components}}
+          <a class="navbar-item" href="{{{relativize ./url}}}">{{{./title}}}</a>
+        {{/each}}
+
+              <!--  <li class="component{{#if (eq this @root.page.component)}} is-current{{/if}}">
+                    <span class="title">{{{./title}}}</span>
+                    <ul class="versions">
+                      {{#each ./versions}}
+                          <li class="version
+                          {{~#if (and (eq ../this @root.page.component) (eq this @root.page.componentVersion))}} is-current{{/if~}}
+                            {{~#if (eq this ../latestVersion)}} is-latest{{/if}}">
+
+                              <a href="{{{relativize ./url}}}">{{./displayVersion}}</a>
+                          </li>
+                      {{/each}}
+                    </ul>
+                </li>-->
+
+
+
+        <!--<div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" href="#">Products</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="#">Product A</a>
@@ -39,7 +58,7 @@
           <span class="control">
             <a class="button is-primary" href="#">Download</a>
           </span>
-        </div>
+        </div>-->
       </div>
     </div>
   </nav>

@@ -32,7 +32,7 @@
   --panel-background: var(--color-smoke-30);
   --panel-border-color: var(--color-smoke-90);
   /* navbar */
-  --navbar-background: var(--color-jet-80);
+  --navbar-background: #2e3943;
   --navbar-font-color: var(--color-white);
   --navbar_hover-background: var(--color-black);
   --navbar-button-background: var(--color-white);
@@ -110,7 +110,7 @@
   --footer-font-color: var(--color-gray-70);
   --footer-link-font-color: var(--color-jet-80);
   /* dimensions */
-  --navbar-height: calc(63 / var(--rem-base) * 1rem);
+  --navbar-height: calc(50 / var(--rem-base) * 1rem);
   --toolbar-height: calc(45 / var(--rem-base) * 1rem);
   --drawer-height: var(--toolbar-height);
   --body-top: var(--navbar-height);
